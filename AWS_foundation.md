@@ -61,3 +61,33 @@ Use least authorized
 Activate MFA
 Use roles than AccessKey
 Use Credential Report if possible
+
+# Virtualization
+- One machine distributes into multiple machines, VM
+
+	- OS: Windows, linux, MacOS...
+	- Privileged instruction: Commands with system - only OS can command
+		- Regular programs do not need these special authorization
+	- Until VM came out, only one OS was able to run
+
+1 gen: Fully emulated: All the system factors are running inside the emulator
+- Very slow due to using CPU, Hard disk, motherboard etc..
+
+2en gen: Paravirtualization: Guest OS work with Hypervisor (virtual manager exists between OS and hardware)
+- Enhanced speed.
+
+3rd gen: Hardware Virtual Machine(HVM): Hardare supports virtual itself.
+- Guest OS communicated directly with hardware === Very fast(near bare-metal)
+
+
+# EC2: Cloud platform for computing power
+Use when:
+- Building a server
+- Host application or use it: DB, ML, etc ...
+- Graphic Rendering.
+
+Pay per second.
+
+Instance: Memory, CPU, graphics
+EBS: Elastic Block Storrage
+AMI: EC2 instance image 
