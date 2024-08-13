@@ -89,5 +89,24 @@ Use when:
 Pay per second.
 
 Instance: Memory, CPU, graphics
-EBS: Elastic Block Storrage
+EBS: Elastic Block Storage
 AMI: EC2 instance image 
+
+```linux
+// user autorization
+sudo -s
+
+// install web server
+yum install httpd -y
+
+// start web server
+service httpd start
+
+// modify this directory or create
+nano /var/www/html/index.html
+```
+
+Type of instance
+e.g m5 ->c gen 5
+e.g m5a xlarge
+	gen  cpu 	size
